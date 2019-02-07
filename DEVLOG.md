@@ -14,3 +14,10 @@ $ mix archive.install hex phx_new 1.4.0
 $ mix phx.new simple_chat
 $ cd simple_chat
 ```
+
+* Install bootstrap, vue, and vuex
+
+```
+$ cd assets
+$ npm i bootstrap vue vuex
+```
