@@ -17,7 +17,7 @@ module.exports = (env, options) => ({
     'chat': './js/chat.js'
   },
   output: {
-    filename: 'app.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, '../priv/static/js')
   },
   module: {
