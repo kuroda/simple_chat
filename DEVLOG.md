@@ -21,3 +21,9 @@ $ cd simple_chat
 $ cd assets
 $ npm i bootstrap vue vuex
 ```
+
+* Install vue-loader and vue-template-compiler
+
+```
+$ npm i vue-loader vue-template-compiler -D
+```
