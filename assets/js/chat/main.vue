@@ -1,8 +1,13 @@
 <template>
   <div class="wrapper">
-    <input type="text" v-model="message">
-    <button type="button" class="btn btn-primery"
-      @click="submitMessage()">Submit</button>
+    <div>
+      <input type="text" v-model="message">
+      <button type="button" class="btn btn-primery"
+        @click="submitMessage()">Submit</button>
+    </div>
+    <div v-for="message in messages">
+      {{ message }}
+    </div>
   </div>
 </template>
 
