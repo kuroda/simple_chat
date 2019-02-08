@@ -28,4 +28,6 @@ $ npm i bootstrap vue vuex
 $ npm i vue-loader vue-template-compiler -D
 ```
 
-* [dcb5778](https://github.com/kuroda/simple_chat/commit/5779c7129871677d2fb7b04a0e39c174c208afba) Set up webpack.config.js for Vue.js
+* Set up webpack.config.js for Vue.js
+* Create main.vue and store.js
+* Prepare home page
