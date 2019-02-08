@@ -10,14 +10,23 @@ export default new Vuex.Store({
   state: {
     messages: []
   },
+  mutations: {
+    addMessage(state, message) {
+      state.messages.push(message)
+    }
+  },
   actions: {
-    initialize({}) {
+    initialize({ commit }) {
       channel.join()
         .receive("ok", resp => { console.log("Joined successfully", resp) })
         .receive("error", resp => { console.log("Unable to join", resp) })
+
+      channel.on("update", payload => {
+        commit("addMessage", payload.message)
+      })
     },
     submitMessage({}, message) {
-      channel.push("ping", { message: message })
+      channel.push("shout", { message: message })
     }
   }
 })
