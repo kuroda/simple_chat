@@ -2,7 +2,7 @@ defmodule SimpleChatWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", SimpleChatWeb.RoomChannel
+  channel "chat:*", SimpleChatWeb.ChatChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After

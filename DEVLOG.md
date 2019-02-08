@@ -37,3 +37,8 @@ $ npm i vue-loader vue-template-compiler -D
 ```
 $ mix phx.gen.channel Chat
 ```
+
+* Edit these files to join "chat:main" channel
+  - `assets/js/socket.js`
+  - `lib/simple_chat_web/channels/chat_channel.ex`
+  - `lib/simple_chat_web/channels/user_socket.ex`

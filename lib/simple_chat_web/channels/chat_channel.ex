@@ -1,7 +1,7 @@
 defmodule SimpleChatWeb.ChatChannel do
   use SimpleChatWeb, :channel
 
-  def join("chat:lobby", payload, socket) do
+  def join("chat:main", payload, socket) do
     if authorized?(payload) do
       {:ok, socket}
     else
