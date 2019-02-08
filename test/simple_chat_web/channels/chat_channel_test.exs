@@ -4,7 +4,7 @@ defmodule SimpleChatWeb.ChatChannelTest do
   setup do
     {:ok, _, socket} =
       socket(SimpleChatWeb.UserSocket, "user_id", %{some: :assign})
-      |> subscribe_and_join(SimpleChatWeb.ChatChannel, "chat:lobby")
+      |> subscribe_and_join(SimpleChatWeb.ChatChannel, "chat:main")
 
     {:ok, socket: socket}
   end
@@ -16,7 +16,7 @@ defmodule SimpleChatWeb.ChatChannelTest do
 
   test "shout broadcasts to chat:lobby", %{socket: socket} do
     push socket, "shout", %{"hello" => "all"}
-    assert_broadcast "shout", %{"hello" => "all"}
+    assert_broadcast "update", %{"hello" => "all"}
   end
 
   test "broadcasts are pushed to the client", %{socket: socket} do
