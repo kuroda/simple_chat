@@ -42,3 +42,15 @@ $ mix phx.gen.channel Chat
   - `assets/js/socket.js`
   - `lib/simple_chat_web/channels/chat_channel.ex`
   - `lib/simple_chat_web/channels/user_socket.ex`
+
+* Edit `assets/js/chat/main.vue` to place a text input and a submit button
+* Edit the same file to handle click event on the submit button
+
+* Edit these files to push "ping" to ChatChannel
+  - `assets/js/socket.js`
+  - `lib/simple_chat_web/channels/chat_channel.ex`
+  - `assets/js/chat/main.vue`
+  - `assets/js/chat/store.js`
+
+* Edit `assets/js/chat/store.js` to push "shout" message and "receive" message
+* Edit `assets/js/chat/main.vue` to list messages
