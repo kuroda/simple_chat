@@ -1,7 +1,8 @@
 <template>
   <div class="wrapper">
-    <input type="text" id="new-message">
-    <button type="button" class="btn btn-primery">Submit</button>
+    <input type="text" v-model="message">
+    <button type="button" class="btn btn-primery"
+      @click="submitMessage()">Submit</button>
   </div>
 </template>
 
@@ -10,10 +11,20 @@ import Vue from "vue"
 import { mapState } from "vuex"
 
 export default {
+  data: function() {
+    return {
+      message: ""
+    }
+  },
   computed: {
     ...mapState([
       "messages"
     ])
+  },
+  methods: {
+    submitMessage() {
+      console.log(this.message)
+    }
   }
 }
 </script>
