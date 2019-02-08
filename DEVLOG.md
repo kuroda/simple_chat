@@ -31,3 +31,9 @@ $ npm i vue-loader vue-template-compiler -D
 * Set up webpack.config.js for Vue.js
 * Create main.vue and store.js
 * Prepare home page
+
+* Generate a channel
+
+```
+$ mix phx.gen.channel Chat
+```
