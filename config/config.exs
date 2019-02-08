@@ -7,9 +7,6 @@
 # General application configuration
 use Mix.Config
 
-config :simple_chat,
-  ecto_repos: [SimpleChat.Repo]
-
 # Configures the endpoint
 config :simple_chat, SimpleChatWeb.Endpoint,
   url: [host: "localhost"],

@@ -11,7 +11,7 @@ $ mix archive.install hex phx_new 1.4.0
 * Create app skeleton
 
 ```
-$ mix phx.new simple_chat
+$ mix phx.new simple_chat --no-ecto
 $ cd simple_chat
 ```
 

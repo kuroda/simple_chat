@@ -8,8 +8,6 @@ defmodule SimpleChat.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
-      # Start the Ecto repository
-      SimpleChat.Repo,
       # Start the endpoint when the application starts
       SimpleChatWeb.Endpoint
       # Starts a worker by calling: SimpleChat.Worker.start_link(arg)

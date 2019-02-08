@@ -65,11 +65,3 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
-
-# Configure your database
-config :simple_chat, SimpleChat.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "simple_chat_dev",
-  hostname: "localhost",
-  pool_size: 10

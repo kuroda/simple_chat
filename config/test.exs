@@ -8,11 +8,3 @@ config :simple_chat, SimpleChatWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :simple_chat, SimpleChat.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "simple_chat_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
