@@ -23,8 +23,12 @@ export default {
   },
   methods: {
     submitMessage() {
-      console.log(this.message)
+      this.$store.dispatch("submitMessage", this.message)
+      this.message = ""
     }
+  },
+  mounted: function() {
+    this.$store.dispatch("initialize")
   }
 }
 </script>
