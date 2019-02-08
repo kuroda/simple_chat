@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
-    Hello, world!
+    <input type="text" id="new-message">
+    <button type="button" class="btn btn-primery">Submit</button>
   </div>
 </template>
 
