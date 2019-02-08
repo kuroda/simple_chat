@@ -1,20 +1,29 @@
 # SimpleChat
 
-To start your Phoenix server:
+## 動作環境
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+* Erlang/OTP 20 以上
+* Elixir 1.5 以上
+* Node.js 10 以上
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+※ データベース管理システム（PostgreSQL、MySQL等）は不要
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## セットアップ手順
 
-## Learn more
+```
+$ git clone https://github.com/kuroda/simple_chat.git
+$ cd simple_chat
+$ mix deps.get
+$ cd assets && npm ci
+$ cd ..
+```
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+## サーバー起動
+
+```
+$ mix phx.server
+```
+
+## 動作確認
+
+ブラウザで [`localhost:4000`](http://localhost:4000) を開く。
