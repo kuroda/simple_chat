@@ -15,9 +15,30 @@ $ mix phx.new simple_chat --no-ecto
 $ cd simple_chat
 ```
 
-* Install bootstrap, vue, and vuex
+* Install vue, and vuex
 
 ```
 $ cd assets
-$ npm i bootstrap vue vuex
+$ npm i vue vuex
 ```
+
+* Install vue-loader and vue-template-compiler
+
+```
+$ npm i vue-loader vue-template-compiler -D
+```
+
+* Set up webpack.config.js for Vue.js
+* Create main.vue and store.js
+* Prepare home page
+
+* Generate a channel
+
+```
+$ mix phx.gen.channel Chat
+```
+
+* Edit these files to join "chat:main" channel
+  - `assets/js/socket.js`
+  - `lib/simple_chat_web/channels/chat_channel.ex`
+  - `lib/simple_chat_web/channels/user_socket.ex`
