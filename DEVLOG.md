@@ -15,11 +15,11 @@ $ mix phx.new simple_chat --no-ecto
 $ cd simple_chat
 ```
 
-* Install bootstrap, vue, and vuex
+* Install vue, and vuex
 
 ```
 $ cd assets
-$ npm i bootstrap vue vuex
+$ npm i vue vuex
 ```
 
 * Install vue-loader and vue-template-compiler
